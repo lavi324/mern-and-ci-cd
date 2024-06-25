@@ -33,7 +33,7 @@ pipeline {
                     git config --global user.email "lavialduby@gmail.com"
                     git config --global user.name "lavi324"
                     '''
-                    sh 'git config --global --add safe.directory /home/jenkins/agent/workspace/project'
+                    sh 'git config --global --add safe.directory /home/jenkins/agent/workspace/first'
                     sh 'git checkout main'
                     sh '''        
                     git add .
