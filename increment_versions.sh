@@ -21,10 +21,10 @@ increment_helm_chart_version() {
 jenkinsfile_path="/home/jenkins/agent/workspace/project/Jenkinsfile"
 
 # Chart.yaml path
-chart_yaml_path="/home/jenkins/agent/workspace/project/my_react_chart/Chart.yaml"
+chart_yaml_path="/home/jenkins/agent/workspace/project/my-frontend-chart/Chart.yaml"
 
 # Deployment.yaml path
-deployment_yaml_path="/home/jenkins/agent/workspace/project/my_react_chart/templates/deployment.yaml"
+deployment_yaml_path="/home/jenkins/agent/workspace/project/my-frontend-chart/templates/deployment.yaml"
 
 # Get current image tag and increment
 current_tag=$(awk '/image:/ {print $2}' "$deployment_yaml_path" | cut -d ':' -f 2)
