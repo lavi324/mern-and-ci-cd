@@ -8,9 +8,7 @@ app.use(express.json());
 
 // CORS middleware
 app.use(cors({
-  origin: 'http://34.42.10.247' // Allow requests from this origin
-  // You can also use a regular expression or an array of origins if needed
-  // origin: ['http://34.42.199.204', 'http://your-other-frontend-domain.com']
+  origin: 'http://34.46.197.246' // Allow requests from this origin
 }));
 
 // MongoDB connection setup

@@ -9,7 +9,7 @@ pipeline {
     }
 
     tools {
-        nodejs "21.7.1"
+        nodejs "22.3.0"
     }
 
     environment {
