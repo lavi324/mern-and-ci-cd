@@ -76,7 +76,7 @@ pipeline {
         }
         stage('Helm Package') {
             steps {
-                sh 'helm package my-frontend-chart'
+                sh 'helm package my_frontend_chart'
             }
         }
         stage('Helm Push') {
