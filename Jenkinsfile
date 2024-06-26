@@ -60,8 +60,10 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                echo 'start build docker image'
-                sh "docker build -t lavi324/frontend:${TAG} ."   
+                dir('frontend') {
+                    echo 'start build docker image'
+                    sh "docker build -t lavi324/frontend:${TAG} ."
+                }   
             }
         }
         stage('Push Docker Image') {
